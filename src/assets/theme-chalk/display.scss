@@ -1,0 +1,12 @@
+.hidden{
+    &-xs-only {
+        @media only screen and (max-width: 767px) {
+            display:  none;
+        }
+    }
+    &-sm-and-down {
+        @media only screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+}
