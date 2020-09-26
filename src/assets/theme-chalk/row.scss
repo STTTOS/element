@@ -1,0 +1,17 @@
+.el-row{
+    border: 1px solid;
+    &::after {
+      content: '';
+      display: block;
+    }
+    &::after {
+      clear: both;
+    }
+    &--flex{
+      display: flex;
+      &::after{
+       display: none;
+       content: '';
+      }
+    }
+}

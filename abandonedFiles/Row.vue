@@ -1,6 +1,5 @@
 <template>
     <div
-        class="el-row"
         :class="[
           'el-row',
           {'el-row--flex': this.type === 'flex'}
