@@ -37,7 +37,7 @@ export default {
     style() {
       //   找到父级的gutter
       let parent = this.$parent;
-      while (parent.$options.name !== 'row') { // 父组件
+      while (parent.$options.name !== 'Elrow') { // 父组件
         parent = parent.$parent;
       }
       // 可通过attrs , 也可在父组件先注册gutter, 应该更健壮一些, 可进行检测

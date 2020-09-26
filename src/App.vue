@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <el-row >
-        <el-col :span="1"><div class="grid-content bg-purple-dark"></div></el-col>
+    <el-row tag="p">
+        <el-col :span="1" tag="h3"><div class="grid-content bg-purple-dark">title</div></el-col>
     </el-row>
 
     <el-row :gutter="20">
@@ -44,7 +44,7 @@
 
     <h1>响应式布局</h1>
     <el-row :gutter="10">
-      <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1" ><div class="grid-content bg-purple"></div></el-col>
+      <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1" class="hidden-xs-only"><div class="grid-content bg-purple"></div></el-col>
       <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple-light"></div></el-col>
       <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple"></div></el-col>
       <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1" class="hidden-xs-only"><div class="grid-content bg-purple-light"></div></el-col>
@@ -53,8 +53,6 @@
 </template>
 
 <script>
-import ElRow from '@ele/Row';
-import ElCol from '@ele/Col';
 
 export default {
   name: 'App',
@@ -64,8 +62,6 @@ export default {
     };
   },
   components: {
-    ElRow,
-    ElCol,
   },
 };
 </script>

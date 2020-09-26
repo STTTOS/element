@@ -1,7 +1,11 @@
 import Vue from 'vue';
+import Layout, { Col, Row } from '@ele';
 import App from './App.vue';
-import '@/assets/theme-chalk/display.scss'; // hidden-point
 
+// Vue.use(Layout);
+console.log(Layout);
+Vue.use(Row);
+Vue.use(Col);
 Vue.config.productionTip = false;
 
 new Vue({
