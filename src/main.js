@@ -1,11 +1,7 @@
 import Vue from 'vue';
-import Layout, { Col, Row } from '@ele';
 import App from './App.vue';
+import './plugins/layout';
 
-// Vue.use(Layout);
-console.log(Layout);
-Vue.use(Row);
-Vue.use(Col);
 Vue.config.productionTip = false;
 
 new Vue({

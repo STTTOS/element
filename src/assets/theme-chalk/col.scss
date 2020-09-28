@@ -1,7 +1,9 @@
+@import './mixin/mixin.scss';
 
-.el-col {
-    float: left;
-    box-sizing: border-box;
+
+@include b(col) {
+  float: left;
+  box-sizing: border-box;
 }
 @for $i from 1 through 24 {
     .el-col-#{$i} {
@@ -9,7 +11,7 @@
     }
 }
 // xs < 768px
-@media only screen and (max-width: 767px) {
+@include response(xs){
   @for $i from 1 through 24 {
     .el-col-xs-#{$i} {
         width: $i / 24 * 100%;
@@ -17,28 +19,28 @@
   }
 }
 // md [768px, 992px)
-@media only screen and (min-width: 768px) {
+@include response(sm) {
   @for $i from 1 through 24 {
     .el-col-sm-#{$i} {
         width: $i / 24 * 100%;
     }
   }
 }
-@media only screen and (min-width: 992px) {
+@include response(md) {
   @for $i from 1 through 24 {
     .el-col-md-#{$i} {
         width: $i / 24 * 100%;
     }
   }
 }
-@media only screen and (min-width: 1200px) {
+@include response(lg) {
   @for $i from 1 through 24 {
     .el-col-lg-#{$i} {
         width: $i / 24 * 100%;
     }
   }
 }
-@media only screen and (min-width: 1920px) {
+@include response(xl) {
   @for $i from 1 through 24 {
     .el-col-xl-#{$i} {
         width: $i / 24 * 100%;

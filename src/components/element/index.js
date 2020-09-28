@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Col from './col';
 import Row from './row';
-import '@/assets/theme-chalk/index.scss';
 
 const components = [
   Col,

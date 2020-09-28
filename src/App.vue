@@ -16,6 +16,7 @@
         <el-col :span="6"><div class="grid-content bg-purple-dark"></div></el-col>
     </el-row>
 
+    <h1>弹性盒子</h1>
     <el-row type="flex" class="row-bg">
       <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
       <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
@@ -43,7 +44,7 @@
     </el-row>
 
     <h1>响应式布局</h1>
-    <el-row :gutter="10">
+    <el-row :gutter="10" >
       <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1" class="hidden-xs-only"><div class="grid-content bg-purple"></div></el-col>
       <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple-light"></div></el-col>
       <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple"></div></el-col>
@@ -70,6 +71,7 @@ export default {
 body, ul, p{
   margin: 0;
 }
+
  .el-row {
     margin-bottom: 20px;
     &:last-child {

@@ -1,17 +1,13 @@
-.el-row{
-    border: 1px solid;
-    &::after {
-      content: '';
-      display: block;
+@import './mixin/mixin.scss';
+@import './mixin/util.scss';
+
+@include b(row) {
+  border: 1px solid;
+  @include utils-clearfix;
+  @include m(flex) {
+    display: flex;
+    &::after{
+     display: none;
     }
-    &::after {
-      clear: both;
-    }
-    &--flex{
-      display: flex;
-      &::after{
-       display: none;
-       content: '';
-      }
-    }
+  }
 }

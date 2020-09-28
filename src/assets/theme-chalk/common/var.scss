@@ -1,0 +1,19 @@
+// 公共变量
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1920px;
+
+$breakPoints: (
+  xs: (max-width: $sm - 1),// scss语法
+  sm: (min-width: $sm),
+  md: (min-width: $md),
+  lg: (min-width: $lg),
+  xl: (min-width: $xl),
+);
+// 2
+$breakPoints--hidden: (
+  'xs-only': (max-width: $sm - 1),
+  'sm-and-down': (min-width: $sm) ,
+  'sm-only': (min-width: $sm) and (max-width: $md - 1)
+)

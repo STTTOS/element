@@ -1,0 +1,29 @@
+@import './config.scss';
+@import './common/var.scss';
+
+@mixin b($block){
+    $currentSelector: $namespace + $element-separate + $block;
+    @at-root {
+        .#{$currentSelector} {
+            @content;
+        }
+    }
+}
+
+@mixin  m($modifier) {
+    $currentSelector: & + $modifier-separate + $modifier;
+    @at-root {
+        #{$currentSelector} {
+        @content;
+        }
+    }
+}
+@mixin response($key, $map: $breakPoints) {// 使用$breakPoints
+    @if map-has-key($map, $key) {
+      @media screen and #{ inspect( map-get($map, $key)) } {
+        @content;
+      }
+    } @else {
+      @warn "breakPoints do not include  #{$key}";
+    }
+}
