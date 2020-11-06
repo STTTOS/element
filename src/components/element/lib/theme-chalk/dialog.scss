@@ -1,0 +1,31 @@
+@import './mask.scss';
+.el-dialog {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+ 
+    .el-dialog-inner {
+        position: relative;
+        background: #fff;
+        display: inline-block;
+        margin-top: 15vh;
+        width: 300px;
+        padding: 30px 25px 30px;
+        .close {
+            background: #ddd;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            top: 4px;
+            padding: 4px;
+            border-radius: 50%;
+            right: 10px;
+        }
+    }
+}
